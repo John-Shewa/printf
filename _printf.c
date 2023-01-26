@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _printf - recieves the main string and other parameters to print 
- * a formated string
+ * a formated strings
  * @format: a string containing all desired characters
  * Return: total count of characters printed
  */
