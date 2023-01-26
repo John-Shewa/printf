@@ -7,7 +7,7 @@
 
 /**
  * struct convert - defines structure for functions 
- * @sym: the operator
+ * @sym: the operators
  * @f: the function associated
  */
 struct convert
