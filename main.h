@@ -6,7 +6,9 @@
 #include <stdarg.h>
 
 /**
- * struct convert - defines structure for functions 
+ * struct convert - defines structure for functions
+ *
+ * @sym: is the operator
  * @sym: the operators
  * @f: the function associated
  */
