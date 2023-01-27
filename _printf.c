@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _printf - recieves the main string and other parameters to print 
+ * _printf - recieves the main string and other parameters to print
  * @format: a string containing all desired characters
  * Return: total count of characters printed
  */
@@ -10,7 +10,7 @@ int _printf(const char *format, ...)
 	conver_t f_list[] = {
 		{"c", print_char},
 		{"s", print_string},
-		{"%", print_percent},
+		{"%", print_percentage},
 		{"d", print_integer},
 		{"i", print_integer},
 		{"b", print_integer},
