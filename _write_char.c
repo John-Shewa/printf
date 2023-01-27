@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _write_char.c - writes the character c to stdout
+ * _write_char - writes the character c to stdout
  * @c: is character to print
  * Return: -1 if error, 1 if success
  */
