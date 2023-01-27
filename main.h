@@ -7,11 +7,8 @@
 
 /**
  * struct convert - defines structure for functions 
- * HEAD
  * @sym: is the operator
-=======
  * @sym: the operators
->>>>>>> c913eb6446bf92bbad363f9ff050520e571a8e31
  * @f: the function associated
  */
 struct convert

@@ -4,7 +4,7 @@ int hex_check(int, char);
 /**
  * print_binary - converts a number from base to binary
  * @list: list of arguments passed to this function
- * Return: the length of the number printed
+ * Return:is length of the number printed
  */
 int print_binary(va_list list)
 {

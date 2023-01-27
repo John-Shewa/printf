@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_char - prints character
- * @list: listof arguments
+ * @list: list of arguments
  * Return: will return amount of characters printed
  */
 int print_char(va_list list)
