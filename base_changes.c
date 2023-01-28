@@ -70,7 +70,7 @@ int print_octal(va_list list)
 		octal_rep[len] = (num % 8) + 48;
 		num = num / 8;
 	}
-	octal_rep[len} = '\0';
+	octal_rep[len] = '\0';
 	rev_str = rev_string(octal_rep);
 	if (rev_str == NULL)
 	return (-1);
@@ -97,7 +97,7 @@ int print_hex(va_list list)
 	num = va_arg(list, unsigned int);
 
 	if (num == 0)
-		return (_write_chhar('0'));
+		return (_write_char('0'));
 	if (num < 1)
 		return (-1);
 	len = base_len(num, 16);
@@ -157,7 +157,8 @@ int print_heX(va_list list)
 			rem_num = hex_check(rem_num, 'X');
 			hex_rep[len] = rem_num;
 		}
-		else hex_rep[len] = rem_num + 48;
+		else
+			hex_rep[len] = rem_num + 48;
 		num = num / 16;
 	}
 	hex_rep[len] = '\0';
@@ -185,5 +186,5 @@ int hex_check(int num, char x)
 		return (hex[num]);
 	else
 		return (hex[num]);
-	return(0);
+	return (0);
 }
