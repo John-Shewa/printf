@@ -8,7 +8,8 @@
 int print_reversed(va_list arg)
 {
 	int len;
-	char *str, *ptr;
+	char *str;
+	char *ptr;
 
 	str = va_arg(arg, char *);
 	if (str == NULL)
@@ -21,6 +22,7 @@ int print_reversed(va_list arg)
 	free(ptr);
 	return (len);
 }
+
 /**
  * rot13 - Converts string to rot13
  * @list: string to convert
@@ -28,7 +30,8 @@ int print_reversed(va_list arg)
  */
 int rot13(va_list list)
 {
-	int i, x;
+	int i;
+	int x;
 	char *str;
 	char s[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char u[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
