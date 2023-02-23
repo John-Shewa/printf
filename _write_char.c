@@ -2,8 +2,10 @@
 
 /**
  * _write_char - writes the character c to stdout
- * @c: is character to print
- * Return: -1 if error, 1 if success
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 int _write_char(char c)
 {
