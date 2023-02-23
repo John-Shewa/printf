@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_char - Prints character
  * @list: list of arguments
@@ -10,7 +9,6 @@ int print_char(va_list list)
 	_write_char(va_arg(list, int));
 	return (1);
 }
-
 /**
  * print_string - Prints a string
  * @list: list of arguments
