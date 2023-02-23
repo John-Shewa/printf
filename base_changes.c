@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 int hex_check(int, char);
+
 /**
  * print_binary - converts a number from base to binary
  * @list: list of arguments passed to this function

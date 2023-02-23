@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * parser - Receives the main string and all the necessary parameters to
  * print a formated string.
