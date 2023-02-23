@@ -3,8 +3,9 @@
 
 /**
  * rev_string - reverses a string in place
+ *
  * @s: string to reverse
- * Return: a  pointer to a character
+ * Return: A pointer to a character
  */
 char *rev_string(char *s)
 {
@@ -19,19 +20,20 @@ char *rev_string(char *s)
 	dest = malloc(sizeof(char) * len + 1);
 	if (dest == NULL)
 		return (NULL);
+
 	_memcpy(dest, s, len);
-	for (head = 0; head < len; head++, len++)
+	for (head = 0; head < len; head++, len--)
 	{
-		temp = des[len - 1];
+		tmp = dest[len - 1];
 		dest[len - 1] = dest[head];
 		dest[head] = tmp;
 	}
-	return(dest);
+	return (dest);
 }
 
 /**
  * write_base - sends characters to be written on standard output
- * @str: string to parse
+ * @str: String to parse
  */
 void write_base(char *str)
 {
