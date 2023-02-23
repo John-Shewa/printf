@@ -1,8 +1,10 @@
 #include "main.h"
+
 /**
- * _printf - recieves the main string and other parameters to print
- * @format: a string containing all desired characters
- * Return: total count of characters printed
+ * _printf - Receives the main string and all the necessary parameters to
+ * print a formated string
+ * @format: A string containing all the desired characters
+ * Return: A total count of the characters printed
  */
 int _printf(const char *format, ...)
 {
@@ -13,7 +15,7 @@ int _printf(const char *format, ...)
 		{"%", print_percent},
 		{"d", print_integer},
 		{"i", print_integer},
-		{"b", print_integer},
+		{"b", print_binary},
 		{"r", print_reversed},
 		{"R", rot13},
 		{"u", unsigned_integer},
@@ -28,7 +30,7 @@ int _printf(const char *format, ...)
 		return (-1);
 
 	va_start(arg_list, format);
-	/*calling parser function*/
+	/*Calling parser function*/
 	printed_chars = parser(format, f_list, arg_list);
 	va_end(arg_list);
 	return (printed_chars);
